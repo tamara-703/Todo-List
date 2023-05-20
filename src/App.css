@@ -1,38 +1,111 @@
+@import "https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css";
+
+/* TODOLIST COMPONENT */
 .App {
-  text-align: center;
+  background-color: rgb(172, 172, 210);
+  height: 100vh;
+}
+.todo-header {
+  background-color: beige;
+  border: solid 1px white;
+  box-shadow: 2px 2px 2px;
+  border-radius: 2px;
+  position: sticky;
+  margin: 0px 100px 100px 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border: solid white 2px;
+  width: 500px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-left: 530px;
+  background-color: beige;
+}
+
+.alt-header {
+  margin: 50px 0 0 500px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* POPULATETODO COMPONENT*/
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.filled-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.items-display {
+  display: inline-flex;
+  margin: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+  border: solid 1px black;
+  box-shadow: 2px 2px 2px;
+  width: 200px;
+  background-color: lightgreen;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.item-text {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.done-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.done-item-display {
+  display: inline-flex;
+  margin: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+  border: solid 1px black;
+  box-shadow: 2px 2px 2px;
+  width: 200px;
+  background-color: lightcoral;
+  color: white;
+
+}
+
+.done-item-display strike {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.alt-message {
+  margin-right: 200px;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+
 }
